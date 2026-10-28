@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulul Syafar Huzain, S.Kom - Portfolio & Resume</title>
+    <!-- Meta Open Graph untuk Preview Bagus saat Share Link -->
+    <meta name="description" content="Portofolio resmi Ulul Syafar Huzain, S.Kom - Lulusan S1 Teknik Informatika UNISLA.">
+    <meta property="og:title" content="Ulul Syafar Huzain, S.Kom - Portfolio & Resume">
+    <meta property="og:image" content="z.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -85,6 +91,7 @@
                     <a href="#about" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Tentang</a>
                     <a href="#education" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Pendidikan</a>
                     <a href="#experience" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Pengalaman</a>
+                    <a href="#gallery" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Dokumentasi</a>
                     <a href="#skills" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Keahlian</a>
                     <a href="#contact" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Kontak</a>
                 </nav>
@@ -113,6 +120,7 @@
             <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Tentang</a>
             <a href="#education" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Pendidikan</a>
             <a href="#experience" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Pengalaman</a>
+            <a href="#gallery" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Dokumentasi</a>
             <a href="#skills" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Keahlian</a>
             <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
             <div class="pt-2 border-t border-slate-200 dark:border-slate-800">
@@ -144,7 +152,7 @@
                         <span class="gradient-text">Ulul Syafar Huzain</span>, S.Kom
                     </h1>
 
-                    <p class="text-base sm:text-lg text-slate-6xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
                         Lulusan <strong class="text-slate-900 dark:text-white font-semibold">Sarjana Komputer (S1 Teknik Informatika)</strong> Universitas Islam Lamongan. Memiliki motivasi tinggi, integritas, adaptabilitas yang kuat, serta dedikasi penuh untuk memberikan solusi teknologi dan operasional bagi perusahaan.
                     </p>
 
@@ -424,7 +432,7 @@
                         <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check text-emerald-500 mt-1 mr-2 shrink-0"></i>
-                                <span>Melayani pelanggan dengan tingkat keuasan tinggi serta mengelola transaksi kasir dan stok persediaan produk.</span>
+                                <span>Melayani pelanggan dengan tingkat kepuasan tinggi serta mengelola transaksi kasir dan stok persediaan produk.</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check text-emerald-500 mt-1 mr-2 shrink-0"></i>
@@ -494,8 +502,189 @@
         </div>
     </section>
 
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- SECTION BARU: Galeri Dokumentasi Kegiatan (Slider Coverflow) -->
+<section id="gallery" class="py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Dokumentasi & Portofolio Lapangan</h2>
+            <p class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Galeri Kegiatan</p>
+            <div class="w-16 h-1 gradient-bg mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper gallery-swiper py-8 !overflow-visible">
+            <div class="swiper-wrapper">
+                
+                <!-- Slide 1: PKL KPU Lamongan (Administrasi) -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/datahasil.jpeg" 
+                                 alt="PKL KPU Lamongan" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Foto+PKL+KPU';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">PKL KPU Lamongan</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Pengolahan & Rekapitulasi Data</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Dokumentasi saat melaksanakan tugas verifikasi administrasi dan pengolahan data teknis di KPU.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: PKL KPU Lamongan (Koordinasi) -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/sosialisasipemilih.jpeg" 
+                                 alt="Kegiatan Operasional KPU" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Dokumentasi+Tim';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">PKL KPU Lamongan</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Koordinasi Tim Lapangan</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Dokumentasi Sosialisasi Pemilih di Kantor PC NU Lamongan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 3: PKL KPU Lamongan (Koordinasi) -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/datalapangan.jpeg" 
+                                 alt="Kegiatan Operasional KPU" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Dokumentasi+Tim';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">PKL KPU Lamongan</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Koordinasi Tim Lapangan</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Dokumentasi Pengecekan alat Pemilihan Umum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 4: PKL KPU Lamongan (Koordinasi) -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/pemilihkhusus.jpeg" 
+                                 alt="Kegiatan Operasional KPU" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Dokumentasi+Tim';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">PKL KPU Lamongan</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Koordinasi Tim Lapangan</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Dokumentasi Pendataan Pemilih Khusus di Polres Lamongan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Teh Kota Indonesia -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/teh.jpeg" 
+                                 alt="Teh Kota Indonesia Crew" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Foto+Kerja+Teh+Kota';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">Teh Kota Kedungpring</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Operasional Ritel & Kasir</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Pelayanan pelanggan langsung, pengelolaan sistem kasir, serta kontrol persediaan barang.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Himatika -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/himatika.jpeg" 
+                                 alt="Teh Kota Indonesia Crew" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Foto+Kerja+Teh+Kota';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">HIMATIKA UNISLA</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Studi Banding</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Pelaksanaan Studi Banding dengan UNIKAMA Malang serta Menghadiri 
+                            Acara Lomba Mobile Legends Antar SMA Malang .</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 7: DPM -->
+                <div class="swiper-slide !w-[280px] sm:!w-[340px] transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg">
+                        <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                            <img src="img/dpm.jpeg" 
+                                 alt="Teh Kota Indonesia Crew" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Foto+Kerja+Teh+Kota';" />
+                        </div>
+                        <div class="p-5">
+                            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300"> DPM UNISLA</span>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-base mt-2">Rapat Dewan Perwakilan Mahasiswa UNISLA</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Rapat Penentuan Cara Pemilihan BEM dan DPM Angkatan 2025-2026 
+                                di Gedung DPR Lamongan.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Elemen Navigasi Swiper -->
+            <div class="swiper-pagination !-bottom-2"></div>
+            <div class="swiper-button-prev !text-blue-600 dark:!text-blue-400 opacity-75 hover:opacity-100"></div>
+            <div class="swiper-button-next !text-blue-600 dark:!text-blue-400 opacity-75 hover:opacity-100"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Tambahkan CDN JS Swiper di sebelum penutup tag </body> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+<script>
+    // Inisialisasi Swiper Slider dengan Efek Coverflow (3D)
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.gallery-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 150,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    });
+</script>
+
     <!-- Skills & Competencies Section -->
-    <section id="skills" class="py-16 border-t border-slate-200 dark:border-slate-800">
+    <section id="skills" class="py-16 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Kompetensi Utama</h2>
@@ -506,8 +695,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
                 <!-- Technical Skills -->
-                <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
-                    <div class="flex items-center space-x-3 pb-3 border-b border-slate-100 dark:border-slate-700">
+                <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3 pb-3 border-b border-slate-200 dark:border-slate-700">
                         <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/60 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg font-bold">
                             <i class="fa-solid fa-code"></i>
                         </div>
@@ -524,7 +713,7 @@
                                 <span class="text-slate-800 dark:text-slate-200"><i class="fa-brands fa-python text-yellow-500 mr-1.5"></i> Bahasa Pemrograman Python (Dasar)</span>
                                 <span class="text-blue-600 dark:text-blue-400">Dasar / Konsep Sintaks</span>
                             </div>
-                            <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                            <div class="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                                 <div class="h-full bg-blue-500 rounded-full" style="width: 70%"></div>
                             </div>
                         </div>
@@ -535,7 +724,7 @@
                                 <span class="text-slate-800 dark:text-slate-200"><i class="fa-solid fa-file-excel text-emerald-600 mr-1.5"></i> Microsoft Excel (Analisis Data & Formula)</span>
                                 <span class="text-emerald-600 dark:text-emerald-400">Mahir / Tingkat Tinggi</span>
                             </div>
-                            <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                            <div class="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                                 <div class="h-full bg-emerald-500 rounded-full" style="width: 90%"></div>
                             </div>
                         </div>
@@ -546,7 +735,7 @@
                                 <span class="text-slate-800 dark:text-slate-200"><i class="fa-solid fa-file-word text-blue-600 mr-1.5"></i> MS Word & PowerPoint (Dokumentasi & Presentasi)</span>
                                 <span class="text-blue-600 dark:text-blue-400">Mahir / Efisien</span>
                             </div>
-                            <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                            <div class="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                                 <div class="h-full bg-blue-600 rounded-full" style="width: 90%"></div>
                             </div>
                         </div>
@@ -554,8 +743,8 @@
                 </div>
 
                 <!-- Professional & Soft Skills -->
-                <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
-                    <div class="flex items-center space-x-3 pb-3 border-b border-slate-100 dark:border-slate-700">
+                <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3 pb-3 border-b border-slate-200 dark:border-slate-700">
                         <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg font-bold">
                             <i class="fa-solid fa-user-gear"></i>
                         </div>
@@ -566,7 +755,7 @@
                     </div>
 
                     <div class="grid grid-cols-2 gap-3">
-                        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 flex items-center space-x-3">
+                        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex items-center space-x-3">
                             <i class="fa-solid fa-bullhorn text-blue-500 text-lg"></i>
                             <div>
                                 <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200">Public Speaking</h4>
@@ -574,7 +763,7 @@
                             </div>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 flex items-center space-x-3">
+                        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex items-center space-x-3">
                             <i class="fa-solid fa-chart-line text-emerald-500 text-lg"></i>
                             <div>
                                 <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200">Digital Marketing</h4>
@@ -582,7 +771,7 @@
                             </div>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 flex items-center space-x-3">
+                        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex items-center space-x-3">
                             <i class="fa-solid fa-arrows-rotate text-purple-500 text-lg"></i>
                             <div>
                                 <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200">Adaptabilitas</h4>
@@ -590,7 +779,7 @@
                             </div>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 flex items-center space-x-3">
+                        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex items-center space-x-3">
                             <i class="fa-solid fa-handshake text-amber-500 text-lg"></i>
                             <div>
                                 <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200">Integritas Kerja</h4>
@@ -610,7 +799,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+    <section id="contact" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Mari Terhubung</h2>
@@ -676,7 +865,7 @@
                 <!-- Interactive Contact Form -->
                 <div class="lg:col-span-7">
                     <form id="contact-form" onsubmit="handleContactSubmit(event)" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Kirim Pesan Pesan Langsung</h3>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Kirim Pesan Langsung</h3>
                         
                         <div>
                             <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nama Anda *</label>
@@ -965,7 +1154,6 @@ KEAHLIAN: Python (Dasar), Microsoft Office, Digital Marketing, Public Speaking.
             const subject = document.getElementById('contact-subject').value || "Tawaran Kerja / Pertanyaan";
             const message = document.getElementById('contact-message').value;
 
-            // Direct fallback link simulation
             showToast(`Terima kasih, ${name}! Pesan Anda sedang diproses.`);
             
             setTimeout(() => {
