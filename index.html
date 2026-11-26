@@ -753,105 +753,59 @@
     </div>
 </section>
 
-<!-- SECTION: Sertifikat & Lisensi (Simpel & Direct) -->
-<section id="certificates" class="py-16 bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 transition-colors">
+<!-- SECTION: Sertifikat & Lisensi (Ringkas) -->
+<section id="certificates" class="py-12 bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-10">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Pencapaian</h2>
-            <p class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Sertifikat & Lisensi</p>
-            <div class="w-16 h-1 gradient-bg mx-auto mt-3 rounded-full"></div>
+        <div class="text-center max-w-2xl mx-auto mb-8">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-1">Pencapaian</h2>
+            <p class="text-2xl font-bold text-slate-900 dark:text-white">Sertifikat & Lisensi</p>
+            <div class="w-14 h-1 gradient-bg mx-auto mt-2.5 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Kartu Sertifikat 1 (Diselaraskan ke excel.png) -->
-            <div class="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openCertModal('sertifikat/excel.png', 'Pelatihan Excel')">
-                <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="sertifikat/excel.png" 
-                         alt="Sertifikat Pelatihan Excel" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sertifikat+Excel';" />
-                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <span class="px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm text-xs font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-expand"></i> Perbesar
-                        </span>
-                    </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Sertifikat 1 -->
+            <div class="group rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all cursor-pointer" onclick="openCertModal('sertifikat/excel.png', 'Pelatihan Excel')">
+                <div class="h-36 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                    <img src="sertifikat/excel.png" alt="Pelatihan Excel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sertifikat+Excel';" />
                 </div>
-                <div class="p-4 flex items-center justify-between">
-                    <div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">Kelas Gratis</span>
-                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mt-1">Pelatihan Excel</h4>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-blue-500 text-xs transition-colors"></i>
+                <div class="p-3">
+                    <span class="text-[10px] font-semibold text-blue-600 dark:text-blue-400 block">Kelas Gratis</span>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm truncate mt-0.5">Pelatihan Excel</h4>
                 </div>
             </div>
 
-             <!-- Kartu Sertifikat 2 -->
-            <div class="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openCertModal('sertifikat/kepatihan.jpg', 'Sertifikat Tanding Kejuaraan')">
-                <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="sertifikat/kepatihan.jpg" 
-                         alt="Sertifikat Kejuaraan Kepatihan Cup 2 Jombang" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sertifikat+KPU';" />
-                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <span class="px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm text-xs font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-expand"></i> Perbesar
-                        </span>
-                    </div>
+            <!-- Sertifikat 2 -->
+            <div class="group rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all cursor-pointer" onclick="openCertModal('sertifikat/kepatihan.jpg', 'Sertifikat Tanding Kejuaraan')">
+                <div class="h-36 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                    <img src="sertifikat/kepatihan.jpg" alt="Sertifikat Kejuaraan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Kejuaraan';" />
                 </div>
-                <div class="p-4 flex items-center justify-between">
-                    <div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300">UKM Pagar Nusa UNISLA</span>
-                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mt-1">Sertifikat Kejuaraan</h4>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-purple-500 text-xs transition-colors"></i>
+                <div class="p-3">
+                    <span class="text-[10px] font-semibold text-purple-600 dark:text-purple-400 block">UKM Pagar Nusa</span>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm truncate mt-0.5">Sertifikat Kejuaraan</h4>
                 </div>
             </div>
 
-            <!-- Kartu Sertifikat 3 -->
-            <div class="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openCertModal('sertifikat/kpu1.jpg', 'Sertifikat PKL')">
-                <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="sertifikat/kpu1.jpg" 
-                         alt="Sertifikat Praktik Kerja Lapangan" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sertifikat+KPU';" />
-                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <span class="px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm text-xs font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-expand"></i> Perbesar
-                        </span>
-                    </div>
+            <!-- Sertifikat 3 -->
+            <div class="group rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all cursor-pointer" onclick="openCertModal('sertifikat/kpu1.jpg', 'Sertifikat PKL KPU Lamongan')">
+                <div class="h-36 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                    <img src="sertifikat/kpu1.jpg" alt="Sertifikat PKL KPU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=PKL+KPU';" />
                 </div>
-                <div class="p-4 flex items-center justify-between">
-                    <div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300">KPU Lamongan</span>
-                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mt-1">Sertifikat Interen KPU Lamongan</h4>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-purple-500 text-xs transition-colors"></i>
+                <div class="p-3">
+                    <span class="text-[10px] font-semibold text-purple-600 dark:text-purple-400 block">KPU Lamongan</span>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm truncate mt-0.5">Sertifikat PKL</h4>
                 </div>
             </div>
 
-            <!-- Kartu Sertifikat 4 -->
-            <div class="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openCertModal('sertifikat/nucup1.jpg', 'Sertifikat Tanding Kejuaraan')">
-                <div class="h-52 overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="sertifikat/nucup1.jpg" 
-                         alt="Sertifikat Kejuaraan NU CUP 1 Kediri" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sertifikat+UKM';" />
-                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <span class="px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm text-xs font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-expand"></i> Perbesar
-                        </span>
-                    </div>
+            <!-- Sertifikat 4 -->
+            <div class="group rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all cursor-pointer" onclick="openCertModal('sertifikat/nucup1.jpg', 'Sertifikat Tanding Kejuaraan')">
+                <div class="h-36 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                    <img src="sertifikat/nucup1.jpg" alt="Sertifikat NU CUP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Kejuaraan';" />
                 </div>
-                <div class="p-4 flex items-center justify-between">
-                    <div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300"> UKM Pagar Nusa UNISLA</span>
-                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mt-1">Sertifikat Kejuaraan</h4>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-emerald-500 text-xs transition-colors"></i>
+                <div class="p-3">
+                    <span class="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 block">UKM Pagar Nusa</span>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm truncate mt-0.5">Sertifikat Kejuaraan</h4>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -942,59 +896,42 @@
         });
     });
 </script>
-<!-- SECTION: Proyek & Portofolio -->
-<section id="projects" class="py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors">
+<!-- SECTION: Proyek & Portofolio (Ringkas) -->
+<section id="projects" class="py-12 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Karya & Hasil Kerja</h2>
-            <p class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Proyek Unggulan</p>
-            <div class="w-16 h-1 gradient-bg mx-auto mt-3 rounded-full"></div>
+        <div class="text-center max-w-2xl mx-auto mb-8">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-1">Karya & Hasil Kerja</h2>
+            <p class="text-2xl font-bold text-slate-900 dark:text-white">Proyek Unggulan</p>
+            <div class="w-14 h-1 gradient-bg mx-auto mt-2.5 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- Proyek 1: Dashboard / Pengolahan Data Excel -->
-            <div class="group rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Proyek Excel -->
+            <div class="group rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all overflow-hidden flex flex-col justify-between">
                 <div>
-                    <!-- Preview Gambar Proyek -->
-                    <div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-950">
-                        <img src="img/cpd.png" 
-                             alt="Dashboard Analisis Data Excel" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Dashboard+Excel';" />
-                        <div class="absolute top-3 right-3">
-                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">Pengolahan Data</span>
-                        </div>
+                    <div class="h-36 overflow-hidden bg-slate-100 dark:bg-slate-950">
+                        <img src="img/cpd.png" alt="Dashboard Analisis Data Excel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Dashboard+Excel';" />
                     </div>
-
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                            Dashboard Rekapitulasi & Analisis Data Excel
+                    <div class="p-4">
+                        <span class="text-[10px] font-semibold text-purple-600 dark:text-purple-400">MS Excel • Pivot Table • Formula</span>
+                        <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base mt-0.5 mb-1.5">
+                            Dashboard Rekapitulasi & Analisis Data
                         </h3>
-                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                            Pengolahan data operasional menggunakan formula lanjutan (XLOOKUP, SUMIFS,IF,IFERROR, INDEX-MATCH), Pivot Table, dan visualisasi grafik interaktif.
+                        <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2">
+                            Pengolahan data operasional dengan XLOOKUP, SUMIFS, IF, IFERROR, INDEX-MATCH, serta Pivot Table.
                         </p>
-                        <!-- Tech Stack Chips -->
-                        <div class="flex flex-wrap gap-1.5 mb-2">
-                            <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">MS Excel</span>
-                            <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">Pivot Table</span>
-                            <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300">Data Cleaning</span>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Tombol Aksi -->
-                <div class="p-5 pt-0 flex items-center gap-3">
-                    <a href="project/cpd.xlsx" target="_blank" rel="noopener" class="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold text-center transition-colors">
-                        <i class="fa-solid fa-file-excel mr-1.5"></i> Unduh / Lihat File
+                <div class="px-4 pb-4">
+                    <a href="project/cpd.xlsx" target="_blank" rel="noopener" class="w-full py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold text-center transition-colors flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-file-excel"></i> Unduh / Lihat File
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-
 
 
     <!-- Skills & Competencies Section -->
