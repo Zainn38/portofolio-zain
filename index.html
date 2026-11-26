@@ -13,7 +13,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
@@ -35,7 +36,7 @@
                     }
                 }
             }
-        }
+        };
     </script>
     <!-- Font Awesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -900,7 +901,7 @@
         }, 300);
     }
 </script>
-<!-- MODAL POPUP PERBESAR SERTIFIKAT  -->
+<!-- MODAL POPUP PERBESAR SERTIFIKAT (TEMPELKAN DI SINI) -->
     <div id="cert-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" onclick="closeCertModal()">
         <div class="relative bg-white dark:bg-slate-900 rounded-3xl max-w-4xl w-full overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl p-4 sm:p-6" onclick="event.stopPropagation()">
             
@@ -923,6 +924,7 @@
             </div>
         </div>
     </div>
+
 
 <!-- Tambahkan CDN JS Swiper di sebelum penutup tag </body> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
@@ -1361,53 +1363,68 @@
 
     <!-- JavaScript Interactions -->
     <script>
-        // Dark Theme Logic
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const darkIcon = document.getElementById('theme-toggle-dark-icon');
-        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        // Dark Theme Logic (Versi Stabil)
+        (function() {
+            const htmlEl = document.documentElement;
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
 
-        function initTheme() {
-            if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.remove('dark');
-                darkIcon.classList.remove('hidden');
-                lightIcon.classList.add('hidden');
-            } else {
-                document.documentElement.classList.add('dark');
-                lightIcon.classList.remove('hidden');
-                darkIcon.classList.add('hidden');
+            function updateIcons(isDark) {
+                if (!darkIcon || !lightIcon) return;
+                if (isDark) {
+                    lightIcon.classList.remove('hidden');
+                    darkIcon.classList.add('hidden');
+                } else {
+                    darkIcon.classList.remove('hidden');
+                    lightIcon.classList.add('hidden');
+                }
             }
-        }
-        initTheme();
 
-        themeToggleBtn.addEventListener('click', function() {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-                darkIcon.classList.remove('hidden');
-                lightIcon.classList.add('hidden');
-                showToast("Mode Terang Aktif");
+            // Set kondisi awal saat halaman dibuka
+            const savedTheme = localStorage.getItem('color-theme');
+            if (savedTheme === 'light') {
+                htmlEl.classList.remove('dark');
+                updateIcons(false);
             } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-                lightIcon.classList.remove('hidden');
-                darkIcon.classList.add('hidden');
-                showToast("Mode Gelap Aktif");
+                htmlEl.classList.add('dark');
+                updateIcons(true);
             }
-        });
+
+            // Event saat tombol diklik
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', function () {
+                    const currentlyDark = htmlEl.classList.contains('dark');
+                    if (currentlyDark) {
+                        htmlEl.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+                        updateIcons(false);
+                        if (typeof showToast === 'function') showToast("Mode Terang Aktif");
+                    } else {
+                        htmlEl.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+                        updateIcons(true);
+                        if (typeof showToast === 'function') showToast("Mode Gelap Aktif");
+                    }
+                });
+            }
+        })();
 
         // Mobile Menu Drawer Logic
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('.mobile-nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        });
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
 
         // Experience & Organization Tab Switcher
         function switchTab(type) {
